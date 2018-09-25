@@ -12,7 +12,10 @@ namespace ImageAnalyzer.Controllers
 {
 	public class HomeController : Controller
 	{
-
+		public ActionResult Bug()
+		{
+			throw new NotSupportedException();
+		}
 		public async Task<ActionResult> Image(string url)
 		{
 			var key = "2c52934a04364f5f842c2c2b7ef2b24b";
