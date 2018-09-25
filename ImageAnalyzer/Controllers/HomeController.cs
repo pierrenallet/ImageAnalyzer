@@ -31,7 +31,7 @@ namespace ImageAnalyzer.Controllers
 					VisualFeatureTypes.Tags,
 				}
 				);
-			return Content("result!!! " + 
+			return Content("result " + 
 				string.Join(",", result.Description.Captions.Select(x => x.Text))
 				+ Environment.NewLine + 
 				string.Join(",", result.Tags.Select(x => x.Name)));
